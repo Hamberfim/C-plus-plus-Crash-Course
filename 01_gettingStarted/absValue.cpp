@@ -1,4 +1,5 @@
-#include <cstdio>
+#include <iostream>
+using namespace std;
 
 // exercise 1-1
 int absolute_value(int number) {
@@ -14,8 +15,11 @@ int absolute_value(int number) {
 }
 
 int main(void) {
-  int my_num = -10;
+  int my_num;
+  cout << "Enter a number to find it's absolute value: " << endl;
+  cin >> my_num;
 
-  printf("The absolute value of %d is %d.\n", my_num, absolute_value(my_num));
+  cout << "The absolute value of " << my_num << " is " << absolute_value(my_num)
+       << endl;
   return 0;
 }
