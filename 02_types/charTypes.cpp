@@ -20,5 +20,7 @@ int main(void) {
   printf(((b1) ? "b1 is True\n" : "b1 is false\n"));
   printf(((b2) ? "b2 is True\n" : "b2 is false\n"));
 
+  printf(((0 > 1) ? "0 > 1 True\n" : "0 > 1 false\n"));
+
   return 0;
 }
