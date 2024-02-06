@@ -12,5 +12,13 @@ int main(void) {
 
   printf("%c %c %c, %lc\n", letterM, letterM, letterM, letterZ);
 
+  // using int %d for the boolean specifier
+  bool b1 = true;
+  bool b2 = false;
+
+  printf("b1: %d, b2: %d\n", b1, b2);
+  printf(((b1) ? "b1 is True\n" : "b1 is false\n"));
+  printf(((b2) ? "b2 is True\n" : "b2 is false\n"));
+
   return 0;
 }
