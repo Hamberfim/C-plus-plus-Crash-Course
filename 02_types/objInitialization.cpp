@@ -17,6 +17,7 @@ int main(void) {
 
   printf("a: %d, b: %d, c: %d, d: %d\n", a, b, c, d);
 
+  // initializing POD's
   PodStruct initPod1{};
   PodStruct initPod2 = {};
   PodStruct initPod3{57, "Say Hello"};
@@ -33,6 +34,11 @@ int main(void) {
          initPod4.C);
   printf("initPod5  A: %ld, B: %s, C: %d\n", initPod5.A, initPod5.B,
          initPod5.C);
+
+  // initializing arrays
+  int array1[]{1, 2, 3}; // initialized 3 elements: 1, 2, 3
+  int array2[3]{};       // initialized 3 elements: 0, 0, 0
+  int array3[3];         // uninitialized 3 elements: arbitrary elements
 
   return 0;
 }
