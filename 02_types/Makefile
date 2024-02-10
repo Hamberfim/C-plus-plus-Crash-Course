@@ -15,3 +15,6 @@ strArray: strArray.cpp
 
 usrDefTypesEnum: usrDefTypesEnum.cpp
 	g++ -g3 -ggdb -Wall -Wextra --std=c++20 -o usrDefTypesEnum.exe usrDefTypesEnum.cpp
+
+usrDefTypeStruct: usrDefTypeStruct.cpp
+	g++ -g3 -ggdb -Wall -Wextra --std=c++20 -o usrDefTypeStruct.exe usrDefTypeStruct.cpp
