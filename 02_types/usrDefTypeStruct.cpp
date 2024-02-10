@@ -11,6 +11,8 @@ struct Book {
   bool isHardCover;
 };
 
+// skipping unions since they should only be used in the rarest of cases
+
 int main(void) {
   Book c_programming;
   c_programming.title = "C/C++ Programming";
