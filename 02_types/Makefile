@@ -9,3 +9,6 @@ charTypes: charTypes.cpp
 
 rangeForLoop: rangeForLoop.cpp
 	g++ -g3 -ggdb -Wall -Wextra --std=c++20 -o rangeForLoop.exe rangeForLoop.cpp
+
+strArray: strArray.cpp
+	g++ -g3 -ggdb -Wall -Wextra --std=c++20 -o strArray.exe strArray.cpp
