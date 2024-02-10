@@ -13,5 +13,5 @@ rangeForLoop: rangeForLoop.cpp
 strArray: strArray.cpp
 	g++ -g3 -ggdb -Wall -Wextra --std=c++20 -o strArray.exe strArray.cpp
 
-usrDefTypes: usrDefTypes.cpp
-	g++ -g3 -ggdb -Wall -Wextra --std=c++20 -o usrDefTypes.exe usrDefTypes.cpp
+usrDefTypesEnum: usrDefTypesEnum.cpp
+	g++ -g3 -ggdb -Wall -Wextra --std=c++20 -o usrDefTypesEnum.exe usrDefTypesEnum.cpp
