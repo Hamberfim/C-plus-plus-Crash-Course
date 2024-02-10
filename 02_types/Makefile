@@ -18,3 +18,6 @@ usrDefTypesEnum: usrDefTypesEnum.cpp
 
 usrDefTypeStruct: usrDefTypeStruct.cpp
 	g++ -g3 -ggdb -Wall -Wextra --std=c++20 -o usrDefTypeStruct.exe usrDefTypeStruct.cpp
+
+classMethods: classMethods.cpp
+	g++ -g3 -ggdb -Wall -Wextra --std=c++20 -o classMethods.exe classMethods.cpp
