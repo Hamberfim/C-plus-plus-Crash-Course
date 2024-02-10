@@ -8,6 +8,14 @@ struct PodStruct {
   bool C;
 };
 
+// fully featured class (sort of overloaded)
+struct EchoMe {
+  EchoMe() { printf("no argument\n"); }
+  EchoMe(char a) { printf("char %c\n", a); }
+  EchoMe(int a) { printf("int %i\n", a); }
+  EchoMe(float a) { printf("float %f\n", a); }
+};
+
 int main(void) {
   // initializing a fundamental type to zero
   int a = 0;
@@ -39,6 +47,12 @@ int main(void) {
   int array1[]{1, 2, 3}; // initialized 3 elements: 1, 2, 3
   int array2[3]{};       // initialized 3 elements: 0, 0, 0
   int array3[3];         // uninitialized 3 elements: arbitrary elements
+
+  // fully featured class
+  EchoMe e1;
+  EchoMe e2{'A'};
+  EchoMe e3{128};
+  EchoMe e4{128.3335f};
 
   return 0;
 }
