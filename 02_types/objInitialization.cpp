@@ -21,9 +21,9 @@ int main(void) {
   int a = 0;
   int b{};
   int c = {};
-  int d;
+  int d = 0;
 
-  printf("a: %d, b: %d, c: %d, d: %d\n", a, b, c, d = 0);
+  printf("a: %d, b: %d, c: %d, d: %d\n", a, b, c, d);
 
   // initializing POD's
   PodStruct initPod1{};
