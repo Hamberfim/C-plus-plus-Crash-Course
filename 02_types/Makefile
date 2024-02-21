@@ -27,3 +27,6 @@ objInitialization: objInitialization.cpp
 
 narrowConvrs: narrowConvrs.cpp
 	g++ -g3 -ggdb -Wpedantic -Wall -Wextra -Werror --std=c++20 -o narrowConvrs.exe narrowConvrs.cpp
+
+destructorCleanUp: destructorCleanUp.cpp
+	g++ -g3 -ggdb -Wpedantic -Wall -Wextra -Werror --std=c++20 -o destructorCleanUp.exe destructorCleanUp.cpp
