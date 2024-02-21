@@ -30,3 +30,6 @@ narrowConvrs: narrowConvrs.cpp
 
 destructorCleanUp: destructorCleanUp.cpp
 	g++ -g3 -ggdb -Wpedantic -Wall -Wextra -Werror --std=c++20 -o destructorCleanUp.exe destructorCleanUp.cpp
+
+exercises: exercises.cpp
+ 	g++ -g3 -ggdb -Wpedantic -Wall -Wextra -Werror --std=c++20 -o exercises.exe exercises.cpp
