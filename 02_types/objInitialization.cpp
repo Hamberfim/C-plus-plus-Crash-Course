@@ -23,13 +23,13 @@ int main(void) {
   int c = {};
   int d;
 
-  printf("a: %d, b: %d, c: %d, d: %d\n", a, b, c, d);
+  printf("a: %d, b: %d, c: %d, d: %d\n", a, b, c, d = 0);
 
   // initializing POD's
   PodStruct initPod1{};
   PodStruct initPod2 = {};
-  PodStruct initPod3{57, "Say Hello"};
-  PodStruct initPod4{57, "Say Hello", true};
+  PodStruct initPod3 = {57, "Say Hello", true};
+  PodStruct initPod4 = {57, "Say Hello", true};
   PodStruct initPod5 = {57, "Say goodbye", false};
 
   printf("initPod1  A: %ld, B: %s, C: %d\n", initPod1.A, initPod1.B,
@@ -47,6 +47,9 @@ int main(void) {
   int array1[]{1, 2, 3}; // initialized 3 elements: 1, 2, 3
   int array2[3]{};       // initialized 3 elements: 0, 0, 0
   int array3[3];         // uninitialized 3 elements: arbitrary elements
+
+  cout << array1 << " " << array2 << " "
+       << " " << array3 << endl;
 
   // fully featured class
   EchoMe e1;
